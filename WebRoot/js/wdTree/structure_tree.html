@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link href="css/tree.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+<script type="text/javascript" src="src/Plugins/jquery.tree.js"></script>
+<script type="text/javascript">
+$(function(){
+	buildTree();
+});
+function buildTree(){
+	var obj = {
+			theme : 'bbit-tree-arrows',
+			showcheck : true,
+			data:[{
+				 id:"node1", //node id
+				 text:"node 1", //node text for display.
+				 value:"1", //node value
+				 showcheck:true, //whether to show checkbox
+				 checkstate:1, //Checkbox checking state. 0 for unchecked, 1 for partial checked, 2 for checked.
+				 hasChildren:true, //If hasChildren and complete set to true, and ChildNodes is empty, tree will request server to get sub node.
+				 isexpand:true, //Expand or collapse.
+				 complete:false, //See hasChildren.
+				 ChildNodes:[
+{
+    "id" : "node11",
+    "text" : "node 11",
+    "value" : "11",
+    "showcheck" : true,
+    complete : true,
+    "isexpand" : false,
+    "checkstate" : 0,
+    "hasChildren" : false
+ },
+ {
+	 "id" : "node12",
+	 "text" : "node 12",
+	 "value" : "12",
+     "showcheck" : true,
+     complete : true,
+     "isexpand" : false,
+     "checkstate" : 0,
+     "hasChildren" : false
+  }
+							 ] // child nodes
+				 }]
+							
+			};
+	$("#structureTree").treeview(obj);
+}
+</script>
+</head>
+<body>
+<div id="structureTree"></div>
+</body>
+</html>

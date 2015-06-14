@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.loginDiv {
+    color: white;
+    padding: 38px;
+    position: relative;
+    width: 940px;
+}

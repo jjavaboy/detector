@@ -1,0 +1,54 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>登录</title>
+<link rel="stylesheet" href="/alarm/css/index.css"/>
+<link rel="stylesheet" href="/alarm/js/Flat-UI-master/bootstrap/css/bootstrap.css"/>
+<link rel="stylesheet" href="/alarm/js/Flat-UI-master/css/flat-ui.css"/>
+<link rel="shortcut icon" href="/alarm/js/Flat-UI-master/images/favicon.ico">
+</head>
+<body style="background-color: #1ABC9C;">
+<div align="center">
+<div class="loginDiv">
+    <div class="login-screen">
+      <div class="login-icon">
+        <img src="/alarm/images/infinity.png" alt="Welcome to Alarm Sys" />
+        <h4>Welcome to <small>Alarm Sys</small></h4>
+      </div>
+	  <form id="loginForm" action="j_security_check" method="post">
+      <div class="login-form">
+        <div class="control-group">
+			<input id="j_username" name="j_username" class="login-field" type="text" placeholder="Enter your name" value="">
+			<label class="login-field-icon fui-user" for="login-name"></label>
+		</div>
+
+        <div class="control-group">
+			<input id="j_password" name="j_password" class="login-field" type="password" placeholder="Enter your password" value="">
+			<label class="login-field-icon fui-lock" for="login-pass"></label>
+		</div>
+
+        <a class="btn btn-primary btn-large btn-block" href="javascript:alarmLogin.login();">Login</a>
+        <a class="login-link" href="javascript:void(0);">Lost your password?</a>
+      </div>
+	  </form>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="/alarm/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/alarm/js/Flat-UI-master/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/alarm/js/Flat-UI-master/js/flatui-checkbox.js"></script>
+<script type="text/javascript" src="/alarm/js/page/login.js"></script>
+<script type="text/javascript">
+	var alarmLogin = new AlarmLogin();
+/*$(function(){
+	$("#j_password").keyup(function(e){
+		if(e.keyCode == 13){
+			alarmLogin.login();
+		}
+	});
+});*/	
+</script>
+</body>
+</html>

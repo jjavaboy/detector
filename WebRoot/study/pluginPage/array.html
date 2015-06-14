@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>About Array</title>
+</head>
+<body>
+<div ></div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<!--
+-->
+<script type="text/javascript" src="../js/array.js"></script>
+<script >
+$(function(){
+	//uses commonly 
+	var array = ['body','boy','girl'];
+	//var str = array.toString();
+	//alert(typeof str);
+	//alert(str instanceof String );
+	var joinVar = array.join('/');
+	//alert(joinVar);
+	
+	//------------------------- 
+	//array like stack  ( push(),pop() )
+	
+	//return length of array instance.
+	var len = array.push('man','woman');
+	//alert(len);
+	var tail = array.pop();
+	//alert(tail+','+array.length);
+
+	//------------------
+	//array like queue ( push(),shift(),unshift() )0
+	array.push('male','female');
+	var head = array.shift();
+	//alert(head + ',' + array.toString());
+	array.unshift('beauty');
+	//alert(array.toString());
+
+	//--------------------------
+	//operate the array
+	//alert(array+' , man:'+array.lastIndexOf('man'));
+
+	var campare = compareValue('age');
+	var result = campare({ name : 'abc', age : 10},{ name : 'bcd' , age : 10});
+	//alert(result.toString());
+});
+</script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>About Object</title>
+</head>
+<body>
+<div ></div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/object.js"></script>
+
+<script >
+$(function(){
+	var person = new Person('myName');
+	var person2 = new Person();
+	//alert(person.instanceCount);
+	//alert(person2.instanceCount);
+
+	var person1 = new Person();
+	//person1.sayName();
+
+	person2.sayName();
+
+	Person.prototype.sayHi = function(){
+		alert('hi ' + this.name);
+	};
+	//alert(person1.sayName() == person2.sayName()); 
+	//person1.name = 'new name of lam';
+	//alert(person1.name + ',' + person2.name);
+	//delete person1.name;
+	//alert(person1.name + ',' + person2.name);
+	
+	//alert(person1.constructor == person2.constructor);
+	//person1.sayHi();
+	//person2.sayHi();
+
+	//var obj = new Obj();
+	Obj.createObj('first');
+	//alert(Obj.getObjArray());
+
+	//eval('alert("alert from eval.");');
+	var per = new Person('lam',99,'Software Engineer');
+	//per.sayName();
+	//per.sayAge();
+	//per.sayJob();
+
+	var man0 = new Man();
+	//man0.sayName();
+
+	var man1 = new Man('linam');
+	man0.ageIncrement(1);
+	//man1.sayName();
+	//alert(man1.age);
+
+	//alert(application.getComponentCount());
+	application.registerComponent(new Object());
+	//alert(application.getComponentCount());
+});
+</script>
+</html>

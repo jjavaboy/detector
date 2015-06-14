@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+.loginDiv {
+    color: white;
+    padding: 38px;
+    position: relative;
+    width: 940px;
+}
+
+.bodyClass{
+	background-color: #1D1D1D;
+}
+.outterContain{
+    overflow: auto;
+	height: 100%;
+    width: 100%;
+}
+.mainContain{
+	margin: 80px 20px 5px 20px ;
+	width: 1000px;
+	text-align: left;
+}
+.headDiv{
+	padding-top: 8px;
+	padding-right: 10px;
+}
+.span3 {
+    width: 60px;
+}
+.logoutBotton{
+	float: right;	
+}
+.loginUser{
+	float:left;
+	margin-left: 1200px;
+	color: yellow;
+}
+.clear{
+	clear: both;
+}
+.pageTitle{
+	color: #FFFFFF;
+}
+.cherry{
+	width:40%;
+	border-top: 1px solid #DDDDDD;
+	border-right: 0px solid #DDDDDD;
+	border-left: 0px solid #DDDDDD;
+	border-bottom: 0px solid #DDDDDD;
+}
